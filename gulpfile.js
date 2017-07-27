@@ -46,9 +46,14 @@ gulp.task('clean-images', function() {
 });
 
 gulp.task('sass', function(){
+  // var bootstrapCSS = gulp.src('./node_modules/bootstrap/dist/css/bootstrap.css');
+  // var sassFiles;
+
+
   sassFiles = gulp.src(SOURCEPATHS.sassApp)
       .pipe(autoprefixer())
       .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+      // return merge(bootstrapCSS, sassFiles)
           .pipe(concat('app.css'))
           .pipe(gulp.dest(APPPATH.css));
 });
@@ -59,6 +64,7 @@ gulp.task('images', ['clean-images'], function() {
       .pipe(imagemin())
       .pipe(gulp.dest(APPPATH.img));
 });
+
 
 
 gulp.task('scripts',['clean-scripts'],  function() {
