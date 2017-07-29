@@ -1,0 +1,31 @@
+.services {
+
+  margin-top: 60px;
+  h2 {
+    font-size: map-get($heading-font-size, h2);
+    margin-bottom: 30px;
+    margin-top: 0;
+    font-family: $gallery-font-family;
+    color: $gallery-caption-text-color;
+    font-weight: $gallery-caption-font-weight;
+  }
+
+  .services-list {
+    list-style: none;
+    padding: 0;
+
+    li {
+
+      h3 {
+        margin-bottom: 30px;
+        font-size: map-get($heading-font-size, h4);
+        color: $paragraph-text-color;
+        font-weight: $paragraph-font-weight;
+      }
+      p {
+        font-size: $paragraph-services-font-size;
+        line-height: $paragraph-line-height;
+      }
+    } // end li
+  }
+} // end services

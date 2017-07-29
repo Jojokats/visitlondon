@@ -9,32 +9,31 @@ $black:                #111111;
 $dark-grey:            #494949;
 $deep-blue:            #3c4859;
 $silver-blue:          #b0d0d3;
+$canari:               #f3eec3;
+$orange:               #e6b89c;
+$taupe:                #b7b3a1;
 
-/* My palette */
-$my-green: #a5d0a8; /* green */
-$my-grey-green: #8cada7; /* grey-green */
-$my-black: #2f2f2f; /* black */
-$myblueice: #5d737e; /* blue-ice */
-$my-blue-purple: #3a405b; /* blue-purple */
-$my-pink: #DC7F9B; /* pink */
 
-// $bg-color:             $white;
-// $bg-color:             lighten($blue, 20);
+// Color General
 $bg-color:             $silver-blue;
 $text-color:           $black;
 
-$paragraph-font-size:  1.6rem;
-$paragraph-font-family: 'Bitter', serif;
-
+// Navigation
 $nav-bg-color: $deep-blue;
 $menu-anchor-font-size: 1.2rem;
-$menu-anchor-hover-color: $yellow;
+$menu-anchor-hover-color: darken($orange, 30);
 $menu-anchor-color: $white;
+$menu-anchor-orange: darken($orange, 15);
+$menu-font-family: 'Open Sans', sans-serif;
 
+// Headings
 $heading-font-family: 'Open Sans', sans-serif;
 $heading-font-weight: 700;
-$heading-color: $green;
-$heading-color2: $yellow;
+$heading-color: $white;
+$heading-color2: $black;
+$heading-color-yellow: $yellow;
+$heading-color-canari: $canari;
+$heading-color-orange: darken($orange, 15);
 $heading-font-size: (
   h1: 2.5rem,
   h2: 2.25rem,
@@ -44,13 +43,23 @@ $heading-font-size: (
   h6: 1.25rem
 );
 
-// visit
+// Paragraph
+$paragraph-font-size:  1.6rem;
+$paragraph-font-size-sm: 1rem;
+$paragraph-font-family: 'Bitter', serif;
+$paragraph-font-weight-light: 300;
+$paragraph-line-height: 1.5;
+
+// Cards
+$card-bg-color: lighten($taupe, 15);
+$card-text-font-size: 1rem;
+
+// Visit
 $visit-border-color:   $white;
-// $visit-heading-color:  darken($my-green, 10);
 $visit-heading-color:  lighten($yellow, 10);
 $visit-text-color:     lighten($black, 20);
 
-// grid & responsive
+// Grid & responsive
 $breakpoints: (
   phone: 480px,
   tablet: 768px,
@@ -59,8 +68,29 @@ $breakpoints: (
 $columns: 12;
 $grid-max-width: 1200px;
 
-// buttons
-$btn-font-size: 16px;
+// Buttons
+$btn-font-size: 1rem;
+$btn-font-weight: 300;
+$btn-bg-color: $taupe;
+
+// Gallery
+$gallery-font-family: $heading-font-family;
+$gallery-caption-text-color: $dark-grey;
+$gallery-caption-font-weight: 400;
+
+// Tables
+$table-font-size: 1rem;
+$table-caption-font-family: $heading-font-family;
+$table-caption-text-color: $dark-grey;
+$table-color: $dark-grey;
+$table-font-weight: 400;
+$table-bg-color: lighten($taupe, 15);
+
+// Services
+$paragraph-services-font-size: 1rem;
+$paragraph-text-color: $dark-grey;
+$paragraph-font-weight: 400;
 
 //footer
-$bg-footer: $dark-blue;
+$bg-footer: $deep-blue;
+$footer-color: $white;

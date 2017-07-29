@@ -10,14 +10,21 @@
 
 body {
   // background-color: $blue;
-  background-color: $bg-color;
+  background-color: $white;
   font-size: $paragraph-font-size;
   color: $text-color;
   font-family: $paragraph-font-family;
 }
 
+img {
+  max-width: 100%;
+}
+
 main#main-content {
   margin-bottom: 80px;
+  // h2 {
+  //   margin-left: 20px;
+  // }
 }
 
 footer {

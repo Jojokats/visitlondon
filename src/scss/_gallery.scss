@@ -1,0 +1,20 @@
+.gallery {
+  @include clearfix;
+  h2 {
+    margin-bottom: 30px;
+    margin-top: 0;
+    font-family: $gallery-font-family;
+    color: $gallery-caption-text-color;
+    font-weight: $gallery-caption-font-weight;
+  }
+  li.image-container {
+    float: left;
+    list-style: none;
+    @include grid-images(4, 3%);
+    img {
+      display: block;
+      max-width: 100%;
+      @include border-radius(5px);
+    }
+  }
+}

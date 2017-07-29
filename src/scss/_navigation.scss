@@ -6,6 +6,7 @@
   h2 {
     text-align: left;
     margin: 0;
+    color: $heading-color-orange;
 
     &.site-name {
       display: none;
@@ -21,7 +22,7 @@
         display: none;
       }
     }
-  }
+  } // End of h2
 
   nav {
     display: inline;
@@ -31,8 +32,10 @@
     }
     a {
       text-align: center;
-      color: $menu-anchor-color;
+      font-family: $menu-font-family;
+      color: $menu-anchor-orange;
       font-size: $menu-anchor-font-size;
+      font-weight: lighter;
       text-decoration: none;
       display: block;
       margin-bottom: 20px;
@@ -52,6 +55,21 @@
           margin-right: 0;
         }
       }
-    } // End of a
+    } // End of anchors
+  } // End of nav
+} // End of navigation
+
+.footer-navigation {
+  @extend .navigation;
+
+  .menu {
+    float: left;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: .8rem;
+
+    a {
+      text-align: left;
+    }
   }
 }

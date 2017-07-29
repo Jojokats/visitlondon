@@ -11,3 +11,16 @@ p {
   font-size: $paragraph-font-size;
   color: $dark-grey;
 }
+
+.navigation {
+  & h2 {
+    color: $heading-color;
+    font-weight: lighter;
+  }
+}
+
+.background-image {
+  & h1 {
+    color: $heading-color;
+  }
+}

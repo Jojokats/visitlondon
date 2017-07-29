@@ -1,0 +1,9 @@
+.btn {
+  // @include button( darken($taupe, 5), $btn-bg-color, $black);
+  @include button( $taupe, darken($taupe, 5), $black);
+  margin-bottom: 15px;
+}
+
+.btn-service {
+  @include button( $taupe, darken($taupe, 5), $black);
+}

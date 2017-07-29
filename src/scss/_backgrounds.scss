@@ -1,0 +1,32 @@
+.background-image {
+  display: table;
+  width: 100%;
+  position: relative;
+  margin-bottom: 90px;
+
+  .content-bg-image {
+    display: table-cell;
+    vertical-align: bottom;
+    padding: 0 120px 40px 120px;
+    position: relative;
+    h1 {
+      font-size: map-get($heading-font-size, h1);
+    }
+    p {
+      color: $white;
+      line-height: 1.5;
+      margin-top: 15px;
+      font-weight: $paragraph-font-weight-light;
+    }
+  } // end .content-bg-image
+} // end .background-image
+
+.london {
+  @include bg-mixin('../img/bg/bg01.jpg', 60vh, top center);
+}
+
+.subway {
+  @include bg-mixin('../img/bg/bg03.jpg', 40vh);
+  // margin: 0 0 0 20px;
+  left: -10px;
+}
